@@ -1,0 +1,1174 @@
+body{
+	box-sizing: border-box;
+}
+
+#all-head ul {
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+#all-head ul li {
+	list-style-type: none;
+	line-height: 35px;
+}
+
+#all-head ul li img {
+	height: 35px;
+}
+
+#all-head ul li a {
+	text-decoration: none;
+	display: inline-block;
+	width: 35px;
+	color: #333;
+	font-size: 15px;
+}
+
+#all-head ul :first-child {
+	margin-left: 10%;
+}
+
+#all-head ul :nth-child(2) {
+	margin-left: 34%;
+}
+
+#all-head ul :nth-child(3)~li a {
+	width: 69px;
+}
+
+#all-head ul :first-child~li {
+	margin-right: 17px;
+}
+
+
+#all-footer {
+	width: 100%;
+	background-color: #000;
+	height: 79px;
+}
+
+#all-footer div {
+	float: left;
+	margin-left: 10%;
+
+}
+
+#all-footer div img {
+	margin: 3px 5px 0 0;
+}
+
+#all-footer p {
+	float: right;
+	color: #898989;
+	font-size: 13px;
+	text-align: right;
+	vertical-align: middle;
+	padding-top: 5px;
+	margin-right: 19%;
+}
+
+
+
+#index-body {
+	background-image: url("../bg.jpg");
+	width: 100%;
+	height: 1254px;
+}
+
+#index-body>ul {
+	width: 100%;
+	height: 74px;
+	display: flex;
+	flex-wrap: nowrap;
+	background-color: rgba(0, 0, 0, 0.6);
+	position: relative;
+	z-index: 6;
+
+}
+
+#index-body>ul>li {
+	width: 100px;
+	height: 69px;
+	margin-left: 19%;
+	list-style: none;
+	font: 16px "Microsoft YaHei";
+}
+
+#index-body>ul :nth-child(2)~li {
+	margin-left: 6px;
+}
+
+#index-body>ul :first-child+li {
+	margin-left: 17%;
+}
+
+
+#index-body>ul>li a {
+	display: inline-block;
+	width: 100%;
+	height: 68px;
+	color: rgb(255, 255, 255);
+	white-space: nowrap;
+	line-height: 68px;
+	text-align: center;
+	text-decoration: none;
+}
+
+#index-body>ul>li>ul {
+	border-top: 5px solid #cfaf70;
+	display: none;
+}
+
+#index-body>ul>li:hover>ul {
+	display: block;
+	background-color: transparent;
+}
+
+#index-body>ul>li:hover>ul>li {
+	margin-left: 0;
+}
+
+#index-body>ul>li>ul>li {
+	margin-top: 2px;
+	list-style: none;
+	height: 36px;
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+
+#index-body>ul>li>ul>li {
+	height: 100%;
+	font: 14px "Microsoft YaHei";
+	color: #e9ecef;
+}
+
+#index-body>ul>li>ul>li:hover {
+	background: url(../select_xz.png) no-repeat 6px 11px;
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+#index-body>ul>li>ul>li>a:hover{
+	color: #c6a35d;
+}
+
+#index-body>ul>li>ul>li>a {
+	height: 36px;
+	line-height: 36px;
+}
+
+
+#index-body>ul+div {
+	height: 108px;
+	width:100%
+}
+
+#index-body>ul+div :first-child{
+	margin-left: 56.7%;
+}
+#index-body .ad {
+	position: relative;
+	width: 100%;
+	height: 556px;
+	z-index:668;
+}
+
+#index-body .ad :first-child {
+	display: block;
+	width: 39px;
+	height: 39px;
+	margin-left: 78%;
+	background: url(../close_g.png);
+}
+
+#index-body .ad :last-child {
+	display: inline-block;
+	width: 730px;
+	height: 480px;
+	margin-top: -4px;
+	margin-left: 40%;
+	background: url(../banner.png) no-repeat -1130px 0;
+}
+
+#index-body .btn {
+	height: 69px;
+	width: 100%;
+	margin-top: 32px;
+	display: flex;
+	flex-wrap: nowrap;
+	position:relative;
+}
+
+#index-body .btn a {
+	background: url(../xuebi.png) no-repeat;
+	display: inline-block;
+	height: 100%;
+	width: 208px;
+	height: 69px;
+}
+
+#index-body .btn :first-child {
+	background-position: ;
+	margin-left: 25%;
+}
+
+#index-body .btn :nth-child(2n) {
+	margin: 18px 20px 15px 15px;
+	display: inline-block;
+	width: 24px;
+	height: 36px;
+	background: url(../xuebi.png) no-repeat -627px 0;
+}
+
+#index-body .btn :nth-child(3) {
+	background-position: -209px 0;
+}
+
+#index-body .btn :nth-child(5) {
+	background-position: -418px 0;
+}
+
+#index-body .btn :nth-child(7) {
+	background-position: -209px -140px;
+}
+
+/* 轮播图样式 */
+#index-body .btn+div {
+	height:358px;
+	width: 100%;
+	display: flex;
+	margin-top: 45px;
+}
+
+#index-body .banner{
+	width:710px;
+	height:348px;
+	position:relative;
+	margin-left:18%;
+}
+
+#index-body .banner>div :not(.show){
+	display:none;
+}
+
+#index-body .banner>ul{
+	height:42px;
+	width:100%;
+	left:0;
+	top:306px;
+	position:absolute;
+	z-index:6;
+	background-color:rgba(0, 0, 0, 0.8);
+	font:14px "Microsoft YaHei";
+}
+
+#index-body .banner>ul>li{
+	display:inline-block;
+	width:24.5%;
+	list-style:none;
+}
+
+#index-body .banner>ul>li>a{
+	display:inline-block;
+	width:100%;
+	height:42px;
+	line-height: 42px;
+	text-align:center;
+	text-decoration: none;
+	color:#E9ECEF;
+}
+
+#index-body .banner>ul>li .show{
+	background-color: #c6a35d;
+}
+
+/*新闻&公告选项卡 */
+
+
+#index-body .btn+div .banner+div {
+	display: inline-block;
+	width: 442px;
+	height: 343px;
+	margin-left: 30px;
+}
+
+
+#index-body .btn+div .banner+div>div{
+	width:100%;
+	font-size:0;
+}
+
+#index-body .btn+div .banner+div>div>a {
+	display: inline-block;
+	width:50%;
+	text-decoration:none;
+	color: #b2b2b2;
+	border-bottom: 1px solid #2c2121;
+	height: 42px;
+	line-height: 42px;
+	text-align: center;
+	font-size:16px;
+	font-weight: bold;
+}
+
+
+#index-body .btn+div .banner+div>ul {
+	width: 100%;
+	list-style: none;
+	display: block;
+}
+
+#index-body .btn+div .banner+div>div :first-child{
+	color:#c6a35d;
+} 
+
+#index-body .btn+div .banner+div>ul a:hover{
+	color:#c6a35d;
+}
+
+#index-body .btn+div .banner+div>ul>li>a {
+	display: flex;
+	width: 442px;
+	height: 43px;
+	color: #b2b2b2;
+	text-decoration: none;
+	border-bottom: 1px solid #2c2121;
+	font: 14px "Microsoft YaHei";
+	justify-content: space-between;
+
+}
+
+#index-body .btn+div .banner+div>ul>li>a strong,
+span {
+	line-height: 42px;
+}
+
+#index-body .btn+div .banner+div>ul>li>a>div {
+	width: 360px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	word-break: normal;
+}
+
+#index-body .btn+div .banner+div>ul+ul{
+	display: none;
+}
+
+/* 第二个主页 */
+#index-body+div{
+	/* margin-top:40px; */
+	width:100%;
+	height:955px;
+	position:relative;
+	overflow: hidden;
+}
+
+#index-body+div>img{
+	position:absolute;
+	top:0;
+	left:856px;
+	z-index:66;
+}
+
+#index-body+div>h2{
+	margin-top:28px;
+	position: absolute;
+	top:54px;
+	left:360px;
+	z-index:66;
+}
+
+/* 人物导航栏 */
+#index-body+div>ul{
+	width:118px;
+	height:600px;
+	position:absolute;
+	top:200px;
+	left:74.5%;
+	z-index:66;
+}
+/* 每个人物的框框 */
+#index-body+div>ul>li{
+	list-style: none;
+	width:118px;
+	height:150px;
+	font-weight: bold;
+	text-align:center;
+}
+
+#index-body+div>ul>li>a{
+	display:block;
+	text-decoration: none;
+	color:#3f3f3f;
+}
+
+/* 每个人物的小图片 */
+#index-body+div>ul>li>a>div{
+	width:118px;
+	height:98px;
+}
+
+
+#index-body+div>ul>li>a>span{
+	display:block;
+	width:80px;
+	height:42px;
+	line-height:21px;
+	margin:5px 0 0 19px;
+	text-align:center;
+}
+
+#index-body+div>ul>li>a>span>strong{
+	display: block;
+	height:21px;
+	width:100%;
+	font-size:12px;
+}
+
+/* 默认北洛高亮图 */
+#index-body+div>ul :first-child>a div{
+	background:url(../rw_xuebi.png) no-repeat;
+}
+
+#index-body+div>ul :first-child>a :first-child+div{
+	background:url(../rw_xuebi.png) no-repeat 0 -99px;
+}
+
+#index-body+div>ul :nth-child(2)>a div{
+	background: url(../rw_xuebi.png) no-repeat -119px 0;
+}
+
+#index-body+div>ul :nth-child(2)>a :first-child+div{
+	background: url(../rw_xuebi.png) no-repeat -119px -99px;
+}
+
+#index-body+div>ul :nth-child(3)>a div{
+	background: url(../rw_xuebi.png) no-repeat -238px  0;
+}
+
+#index-body+div>ul :nth-child(3)>a :first-child+div{
+	background: url(../rw_xuebi.png) no-repeat -238px -99px;
+}
+
+#index-body+div>ul :last-child>a div{
+	background: url(../rw_xuebi.png) no-repeat -357px  0;
+}
+
+#index-body+div>ul :last-child>a :first-child+div{
+	background: url(../rw_xuebi.png) no-repeat -357px -99px;
+}
+
+/* 让所有onmousein的li里面的a变成高亮 & 以及把里面的第二个黑的隐藏*/
+#index-body+div>ul .show1>a div{
+	display:block;
+}
+
+#index-body+div>ul .show1>a :first-child+div{
+	display:none;
+}
+
+/* 高亮时里面的文字样式以及背景 */
+#index-body+div>ul .show1>a>span{
+	color:#9e7c43;
+	background: url(../rw_xuebi.png) no-repeat -81px -202px;
+}
+
+
+/* 导航栏 让所有第一个高亮的消失 */
+#index-body+div>ul  :not(.show1)>a div{
+	display:none;
+}
+
+#index-body+div>ul  :not(.show1)>a :first-child+div{
+	display:block;
+}
+/* 人物背景 & 介绍  */
+
+#index-body+div>div .show1 {
+	display:block;
+	width:100%;
+	height:955px;
+}
+
+/*  单一人物样式--人物背景 详情 */
+#index-body+div>div>div{
+	background: url(../rw_bg1.jpg) no-repeat;
+	display: none;
+}
+
+#index-body+div div:first-child+div{
+	background: url(../rw_bg2.jpg) no-repeat;
+}
+
+#index-body+div>div :nth-child(2)+div{
+	background: url(../rw_bg3.jpg) no-repeat;
+}
+
+#index-body+div>div :nth-child(3)+div{
+	background: url(../rw_bg4.jpg) no-repeat;
+}
+
+/* 从左→右 动画  */
+#index-body+div>div :first-child>img{
+	position: absolute;
+	top:183px;
+	left:;
+	z-index:10;
+	animation:rwleft 1.2s 0s 1 both;
+}
+
+#index-body+div>div :first-child>img+div{
+	position:absolute;
+	top:310px;
+	right:665px;
+	z-index:10;
+	animation: rwright 1.2s 0s 1 both;
+}
+
+/* 其他人物的动画 */
+#index-body+div div:first-child+div>img{
+	position: absolute;
+	top:133px;
+	right:-30px;
+	z-index:10;
+	animation:rwleft 1.2s 0s 1 both;
+}
+
+#index-body+div>div :first-child+div>img+div{
+	position: absolute;
+	top:290px;
+	left:450px;
+	z-index:10;
+	animation:rwright 1.2s 0s 1 both;
+}
+
+#index-body+div>div :nth-child(2)+div>img{
+	position: absolute;
+	top:44px;
+	left:500px;
+	z-index:10;
+	animation:rwright 1.2s 0s 1 both;
+}
+
+#index-body+div>div :nth-child(2)+div>img+div{
+	position: absolute;
+	top:290px;
+	left:440px;
+	z-index:10;
+	animation:rwleft 1.2s 0s 1 both;
+}
+
+#index-body+div>div :nth-child(3)+div>img{
+	position: absolute;
+	top:57px;
+	left:;
+	z-index:10;
+	animation:rwright 1.2s 0s 1 both;
+}
+
+#index-body+div>div :nth-child(3)+div>img+div{
+	position: absolute;
+	top:290px;
+	left:440px;
+	z-index:10;
+	animation:rwleft 1.2s 0s 1 both;
+}
+
+@keyframes rwleft{
+	from{
+		opacity: 0;
+		transform: translateX(-10%);
+	}
+	to{
+		opacity: 1;
+		transform:none;
+	}
+}
+
+@keyframes rwright{
+	from{
+		opacity: 0;
+		transform:translateX(10%);
+	}
+	to{
+		opacity: 1;
+		transform: none;
+	}
+}
+
+#index-body+div>div>div>div>a{
+	margin: 25px 0 0 184px;
+	display:block;
+	width:119px;
+	height:41px;
+	background:url(../rw_xuebi.png) no-repeat -204px -197px;
+}
+
+#index-body+div>div>div>div>a:hover{
+	background: url(../rw_xuebi.png) no-repeat -323px -197px;
+}
+
+/* 统一设置人物内样式 (暂时没问题,先不设置)*/
+/* #index-body+div>div>{
+	width:100%;
+	height:100%;
+	position:absolute;
+	z-index:1;
+} */
+
+/* 游戏特色 */
+#index-body+div+div{
+	position: relative;
+	width:100%;
+	height:902px;
+	background: url(../ts_bg.png) no-repeat;
+}
+
+#index-body+div+div>img{
+	margin-left:856px;
+}
+
+#index-body+div+div>h2{
+	margin:50px 0 0 360px;
+}
+
+#index-body+div+div>ul{
+	display:flex;
+	margin:62px 0 0 345px;
+	width:1200px;
+	height:570px;
+}
+
+#index-body+div+div>ul>li{
+	list-style: none;
+}
+
+#index-body+div+div>ul :not(:last-child){
+	margin-right:30px;
+}
+
+#index-body+div+div>ul>li>p{
+	width:370px;
+	height:38px;
+	margin-bottom: 15px;
+	background: url(../ts_title.png) no-repeat;
+}
+
+#index-body+div+div>ul :nth-child(2)>p{
+	background: url(../ts_title.png) no-repeat -371px 0; 
+}
+
+#index-body+div+div>ul :last-child>p{
+	background: url(../ts_title.png) no-repeat -742px 0;
+}
+
+#index-body+div+div>ul>li>div{
+	margin-top:15px;
+	width:370px;
+	height:54px;
+	background: url(../ts_title.png) no-repeat  0 -43px;
+}
+
+#index-body+div+div>ul :nth-child(2)>div{
+	background: url(../ts_title.png) no-repeat -371px -43px;
+}
+
+#index-body+div+div>ul :last-child>div{
+	background: url(../ts_title.png) no-repeat -742px -43px;
+}
+
+#index-body+div+div>a{
+	display:block;
+	margin-left:890px;
+	width:138px;
+	height:49px;
+	background: url(../ts_btn_img.png) no-repeat;
+}
+
+#index-body+div+div>a:hover{
+	background: url(../ts_btn_img.png) no-repeat  0 -50px;
+}
+
+/* 影音 */
+.av{
+	width:100%;
+	height:901px;
+	position: relative;
+	background: url(../video_bg.jpg) no-repeat;
+}
+
+.av>img{
+	margin-left:856px;
+}
+
+.av>h2{
+	margin:50px 0 0 360px;
+}
+
+.av>ul{
+	position: absolute;
+	top:350px;
+	left:250px;
+	width:148px;
+	z-index: 66px;
+}
+
+.av>ul>li{
+	list-style:none;
+}
+
+.av>ul>li>a{
+	display: block;
+	width:148px;
+	height:59px;
+	background:url(../v_xuebi.png) no-repeat ;
+}
+
+.av>ul :not(:last-child){
+	margin-bottom:11px;
+}
+
+.av>ul>li>a:hover{
+	background:url(../v_xuebi.png) no-repeat 0 -60px;
+}
+
+.av>ul> :nth-child(2)>a{
+	background: url(../v_xuebi.png) no-repeat -149px 0;
+}
+
+.av>ul> :nth-child(2)>a:hover{
+	background: url(../v_xuebi.png) no-repeat -149px -60px;
+}
+
+.av>ul> :nth-child(3)>a{
+	background: url(../v_xuebi.png) no-repeat -298px -0;
+}
+
+.av>ul> :nth-child(3)>a:hover{
+	background: url(../v_xuebi.png) no-repeat -298px -60px;
+}
+
+.av>ul> :last-child>a{
+	background: url(../v_xuebi.png) no-repeat -447px 0;
+}
+
+.av>ul> :last-child>a:hover{
+	background: url(../v_xuebi.png) no-repeat -447px -60px;
+}
+
+/* 影音 -选项卡内容 */
+.av>div{
+	width:994px;
+	height:580px;
+	margin:38px 0 0 460px;
+	position: relative;
+}
+
+.av>div>div>div{
+	position: absolute;
+	font: 14px "Microsoft YaHei";
+}
+
+/* 具体 影音项目 */
+
+.av>div>div>div>a{
+	text-decoration: none;
+	position:relative;
+	display:inline-block;
+	z-index:66;
+	color:#fff;
+}
+
+/* 把所有播放按钮img固定定位 */
+.av>div>div>div>a>p+img{
+	position: absolute;
+}
+
+
+/* 第一个 左边div位置 */
+.av>div>div div:first-child{
+	top:81px;
+	left: ;
+}
+
+.av>div>div div:first-child>a>p+img{
+	top:153px;
+	left:118px;
+}
+
+.av>div>div div:nth-child(2){
+	top:;
+	left:290px;
+	margin:0 12px 12px 12px;
+}
+
+.av>div>div div:nth-child(2)>a>p+img{
+	top:136px;
+	left:168px;
+}
+
+.av>div>div div:nth-child(3){
+	top:338px;
+	left:302px;
+}
+
+.av>div>div div:nth-child(3)>a>p+img{
+	top:88px;
+	left:168px;
+}
+
+.av>div>div div:nth-child(4)>a{
+	top:81px;
+	left:704px;
+}
+
+.av>div>div div:nth-child(4)>a>p+img{
+	top:106px;
+	left:118px;
+}
+
+.av>div>div div:last-child>a{
+	top:356px;
+	left:704px;
+	width: 290px;
+	height:59px;
+	background: url(../more_btn.jpg) no-repeat 0 -60px;
+}
+
+.av>div>div div:last-child>a:hover{
+	background: url(../more_btn.jpg) no-repeat 0 0;
+}
+
+ .av>div>div>div>a>p{
+	position:absolute;
+	width:100%;
+	height:100%;
+	top:0;
+	left:0;
+	opacity:0.1;
+	background: #000;
+}
+
+.av>div>div>div>a:hover>p{
+	opacity: .6;	
+}
+
+.av>div>div>div>a>p>span{
+	display:block;
+	position: absolute;
+	top:10px;
+	bottom:10px;
+	left:10px;
+	right:10px;
+	border:1px solid #9f8e67;
+}
+
+/* 选项卡第二项开始全部有查看详情 */
+.av>div>div>div>a>span{
+	display: none;
+}
+
+.av>div>div>div>a:hover>span{
+	width:159px;
+	height:48px;
+	position: absolute;
+	text-align: center;
+	line-height: 48px;
+	border:1px solid #a68440;
+	display:inline-block;
+}
+
+.av>div>div>div>a>span:hover{
+	background:#a68440;
+}
+
+
+.av>div>div div:first-child>a>span{
+	left:65.5px;
+	top:158px;
+}
+.av>div>div div:nth-child(2)>a>span{
+	left:115.5px;
+	top:141px;
+}
+
+.av>div>div div:nth-child(3)>a>span{
+	left: 115.5px;
+	top:93px;
+}
+
+.av>div>div div:nth-child(4)>a>span{
+	left:65.5px;
+	top:111px;
+}
+
+/* 设置没有show2的都隐藏div */
+.av>div> :not(.show2){
+	display: none;
+}
+
+/* 设置特殊样式,第一个视频中显示模糊不一致 */
+
+.av>div>div:first-child>div>a>p{
+	opacity: .4;
+}
+
+.av>div>div:first-child>div>a:hover>p{
+	opacity:0;
+	
+}
+
+/* 这个是配置栏 */
+.av+div{
+	width:100%;
+	height:1100px;
+	background: url(../patch_bg.png) no-repeat;
+	position: relative;
+}
+
+.av+div>img{
+	margin:100px 0 0 360px;
+}
+
+table{
+	margin:75px 0 0 360px;
+	width:1200px;
+	height:400px;
+	background: url(../patch_info_bg.png) no-repeat;
+	/* position: absolute; */
+	border-collapse: collapse;
+	text-align: center;
+}
+
+th{
+	height:50px;
+	color:#d9c38b;
+	font-weight:normal;
+	border-right:1px solid #625b44;
+}
+
+table>tbody>tr>td:first-child{
+	color:#d9c38b;
+}
+
+table>tbody>tr>td{
+	color:#bbb6aa;
+	height:48px;
+	border:1px solid #625b44;
+}
+
+table>tbody>tr:last-child{
+	height:58px
+}
+
+/* 合作伙伴 */
+table+div{
+	width: 247px;
+	height:270px;
+	position:absolute;
+	left:50%;
+	margin:75px 0 0 -123.5px;
+	text-align: center;
+}
+
+table+div>div{
+	margin-top:25px;
+	width:247px;
+	height:211px;
+	background: url(../hezuo_bg_.png) no-repeat;
+	position: relative;
+}
+
+table+div>div>div{
+	position:absolute;
+	width:229px;
+	height:193px;
+	overflow: hidden;
+	top:11px;
+	left:10px;
+}
+
+table+div>div>div>ul{
+	animation: gotop 30s linear infinite ;
+}
+
+@keyframes gotop{
+	from{
+		transform:translateY(20px);
+	}
+	
+	to{
+		transform:translateY(-1042px);
+	}
+}
+
+table+div>div>div>ul>li{
+	text-align: center;
+}
+
+table+div>div>div>ul>li>img{
+	margin:0 5px 10px 5px;
+}
+
+/* 侧边栏 */
+.av+div+div{
+	position:fixed;
+	right:0;
+	top:200px;
+	z-index:666;
+	font-size:0;
+	text-align:center;
+}
+/* 里框 */
+.av+div+div>div>div{
+	width:136px;
+	height:422px;
+	background: url(../cebianlan.png) no-repeat;
+	display: inline-block;
+	font:14px "Microsoft YaHei";
+	color: #fff;
+	text-align: center;
+}
+/* 收起 */
+.av+div+div>p,
+.av+div+div>div>p{
+	width:28px;
+	height:62px;
+	display: inline-block;
+	font:14px "Microsoft YaHei";
+	vertical-align: top;
+}
+
+/* 收起和展开 */
+.av+div+div>p>span>a,
+.av+div+div>div>p>a{
+	width:100%;
+	height:100%;
+	line-height:30px;
+	color: #000;
+}
+
+.av+div+div>div>p>a{
+	background:#d8bc81;
+}
+
+.av+div+div>p>span>a{
+	background: #fccf72;
+}
+
+.av+div+div>p>span{
+	display: block;
+	
+}
+.av+div+div>p{
+	display: none;
+	position: absolute;
+	top: 0;
+	right:0;
+}
+
+.av+div+div a{
+	text-decoration: none;
+	display:inline-block;
+}
+
+.av+div+div>div>div>div{
+	width:126px;
+	height:294px;
+	display:inline-block;
+	background: #C6A35D;
+}
+
+.av+div+div>div>div>p{
+	margin-top:7px;
+	width:126px;
+	height:41px;
+	background:url(../fc_bg_img.png) no-repeat ;
+	display: inline-block;
+}
+
+.av+div+div>div>div>div>img{
+	margin-top:10px;
+	display:inline-block;
+}
+
+.av+div+div>div>div>div>span{
+	display:inline-block;
+	margin-top:3px;
+	width:100%;
+	height:25px;
+	line-height: 25px;
+
+}
+
+.av+div+div>div>div>div>span>img{
+	padding-right: 6px;
+	vertical-align:middle;
+}
+
+.av+div+div>div>div>a{
+	font-size:16px;
+	width:126px;
+	height:38px;
+	line-height: 38px;
+	color:#50290a;
+	background:#c6a35d url(../btn_tv.png) no-repeat center 13px;
+	margin-top: 1px;
+}
+
+.av+div+div>div>div>a:hover{
+	background:#dac280 url(../btn_tv.png) no-repeat center 13px;
+}
+
+.av+div+div>div>div>a+a{
+	background: url(../fc_bg_img.png) no-repeat left -48px;
+}
+
+.av+div+div>div>div>a+a:hover{
+	background: url(../fc_bg_img.png) no-repeat left -88px;
+}
+
+/* 遮罩层 */
+.av+div+div+div{
+	position:fixed;
+	width: 100%;
+	height:100%;
+	background:rgba(0,0,0,0.8);
+	top:0;
+	left:0;
+	z-index:667;
+}
+
+/* 影音专用div */
+.av+div+div+div+div{
+	position:fixed;
+	z-index:668;
+	display: none;
+	top:50%;
+	left:50%;
+}
+
+.av+div+div+div+div>video{
+	margin:-280px 0 0 -480px;
+}
+
+.av+div+div+div+div>video+img{
+	position: absolute;
+	margin: 0;	
+	top:-280px;
+	left:480px;
+	cursor: pointer;
+}
+
+.av+div+div+div+div>img{
+	position: absolute;
+	margin:-281.5px 0 0 -500px;
+}
+
+.av+div+div+div+div>img+img{
+	margin:0;
+	top:-281.5px;
+	left:500px;
+	cursor: pointer;
+}
